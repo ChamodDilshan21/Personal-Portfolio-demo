@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamod Dilshan | Full Stack Developer</title>
+  <link rel="icon" type="image/png" href="images/image_no_background_new.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <a href="#"><img class="h-logo" src="images/image_no_background_new.png" alt="Header-logo"></a>
+    <nav id="hdr-nav" class="navbar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="navbar-content">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#profile">Profile</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div class="menu-icon-container">
+      <button class="menu-icon" onclick="openNav()">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 class="title-txt hero-txt" data-aos="fade-up" data-aos-delay="300">Fullstack Developer</h1>
+        <p class="bdy-txt hero-txt" data-aos="fade-up" data-aos-delay="500">I craft with care, code with flair, and
+          build solutions beyond compare.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container" data-aos="zoom-out" data-aos-easing="ease-out-cubic">
+        <div class="about-image">
+          <img src="images/smile-image.png" alt="my image" class="image-1">
+          <img src="images/smile-with-wink.png" alt="my image" class="image-2">
+        </div>
+
+        <div class="about-text">
+          <h3 class="title-txt">Hi there.!</h3>
+          <h2 class="title-txt">I'm Chamod Dilshan. Nice to meet you.</h2>
+          <p class="bdy-txt">A developer who loves building things – from websites and applications to anything that
+            involves code! I’m
+            passionate about creating solutions that are not only functional but also easy to use. Whether it's working
+            with
+            front-end, back-end, or exploring new tech, I’m always up for a new challenge. I believe in continuously
+            learning and growing, and I enjoy helping turn ideas into something real and impactful!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="profile">
+      <div class="container">
+        <h2 class="title-txt">My Profile</h2>
+
+        <div class="btn-container">
+          <button class="nav-btn" onclick="openPage('skills',this)" id="defaultOpen">Skills</button>
+          <button class="nav-btn" onclick="openPage('education',this)">Education</button>
+          <button class="nav-btn" onclick="openPage('experince',this)">Experience</button>
+          <button class="nav-btn" onclick="openPage('secret',this)">Secret Section</button>
+        </div>
+
+        <div class="tab-container">
+          <div id="skills" class="tabcontent">
+            <div>
+              <div class="tab-dtl">
+                <h4 class="bdy-txt">My languages</h4>
+                <ul>
+                  <li class="bdy-txt">Java</li>
+                  <li class="bdy-txt">HTML</li>
+                  <li class="bdy-txt">CSS</li>
+                  <li class="bdy-txt">javascript</li>
+                  <li class="bdy-txt">MJML</li>
+                </ul>
+              </div>
+
+              <div class="tab-dtl">
+                <h4 class="bdy-txt">My Tools</h4>
+                <ul>
+                  <li class="bdy-txt">VS Code</li>
+                  <li class="bdy-txt">Geany</li>
+                  <li class="bdy-txt">NetBeans</li>
+                  <li class="bdy-txt">MySQL</li>
+                  <li class="bdy-txt">Bootstrap (Framework)</li>
+                  <li class="bdy-txt">REST (API)</li>
+                  <li class="bdy-txt">Git/GitHUb (Version Control)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="education" class="tabcontent">
+            <div>
+              <div class="tab-dtl">
+                <h4 class="bdy-txt">Learning since day one, and I will continue to evolve every step of the way. Here's
+                  the proof of my journey.</h4>
+                <ul>
+                  <li class="bdy-txt">Currently expanding my knowledge at iCET Institute</li>
+                  <li class="bdy-txt">G.E.O A/Ls(2024)</li>
+                  <li class="bdy-txt">G.E.O O/Ls(2019)</li>
+                </ul>
+                <p class="bdy-txt">"Education is the most powerful weapon which you can use to change the world."<br>
+                  <span>Nelson Mandela</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="experince" class="tabcontent">
+            <div>
+              <div class="tab-dtl">
+                <h4 class="bdy-txt" style="font-style: italic;">I am currently continuing my studies and, while I don't
+                  have industry-level experience
+                  yet, I am dedicated to honing my skills and gaining the knowledge needed. I am eager for the
+                  opportunity
+                  to apply my learning in a professional environment and take the first step toward making an impact in
+                  the industry.</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <h2>My Journey</h2>
+        <ul class="timeline">
+          <li data-aos="zoom-in-left" data-aos-duration="1000">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+              <h3>Started Learning Web Development</h3>
+              <p>Started my journey with HTML, CSS, and JavaScript to build beautiful websites.</p>
+            </div>
+          </li>
+          <li data-aos="zoom-in-left" data-aos-duration="2000">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h3>Became a Fullstack Developer</h3>
+              <p>Learned backend development with Node.js and Express, and connected databases.</p>
+            </div>
+          </li>
+          <li data-aos="zoom-in-left" data-aos-duration="2500">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h3>Worked on Multiple Projects</h3>
+              <p>Built full-fledged web applications using React and integrated with backend APIs.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p class="contact-intro">Feel free to reach out to me using the form below or through my email and social media.
+          Let's connect!</p>
+
+        <div class="contact-container" data-aos="zoom-in" data-aos-duration="2000">
+          <form class="contact-form" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Write your message"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+
+          <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:email@example.com">email@example.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+123 456 7890</a></p>
+            <div class="social-links">
+              <ul>
+                <li>
+                  <a href="https://web.facebook.com/" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-facebook" target="_blank"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://x.com/?lang=en" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-twitter"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-instagram"></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/" target="_blank">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-linkedin"></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-nav">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="back-to-top">
+      <a href="#hero" class="btn-back-to-top">Back to Top ↑</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 Chamod Dilshan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11">
+    import Swal from 'sweetalert2'
+
+    // or via CommonJS
+    const Swal = require('sweetalert2')
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
